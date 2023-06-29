@@ -12,7 +12,7 @@ char *rot13(char *s)
 	int i;
 
 	char rot13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char ROT13[] = "NOPQRSTUVWYZABCDEFGHIJKLMnopqrstuvwyzabcdefghijklm";
+	char ROT13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char *ptr = s;
 
 	while (*s)
