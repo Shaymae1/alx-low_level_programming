@@ -79,14 +79,14 @@ int main(int argc, char *argv[])
 		carry = 0;
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
-			digit2 = s2[len2] - '0';carry += result[len1 + len2 + 1] + (digit1 * digit2);
+			digit2 = s2[len2] - '0';
+			carry += result[len1 + len2 + 1] + (digit1 * digit2);
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
 		if (carry > 0)
 			result[len1 + len2 + 1] += carry;
-	}
-	for (i = 0; i < len - 1; i++)
+	} for (i = 0; i < len - 1; i++)
 	{
 
 		if (result[i])
